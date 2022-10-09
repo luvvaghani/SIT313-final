@@ -21,8 +21,8 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const email = req.body.email;
   const message = {
-    to: "vaghaniluv@gmail.com",
-    from: 'lmvaghani@gmail.com',
+    to: req.body.email,
+    from: 'luvpatel1111@gmail.com',
     subject: 'deakin university welcome email',
     text: 'Test SENDGRID',
     html: '<strong>This is an automated email from dev DEAKIN.</strong>',
